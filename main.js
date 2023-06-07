@@ -4,7 +4,7 @@ const drawpad = document.getElementById("drawpad");
 
 function createGrid(zahl) {
   if (zahl > 100) {
-    prompt("Only under 100 columns!");
+    zahl = 100;
   }
   drawpad.style.gridTemplateColumns = "repeat(" + zahl + ", 1fr)";
   drawpad.style.gridTemplateRows = "repeat(" + zahl + ", 1fr)";
